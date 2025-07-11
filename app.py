@@ -6,6 +6,7 @@ from PIL import Image
 # Load the model once using Streamlit cache
 @st.cache_resource
 def load_model():
+    # return tf.keras.models.load_model("pretrained_MobileNetV2_classifier.h5")
     return tf.keras.models.load_model("fine_tuned_InceptionV3_classifier.h5")
 
 # App Title
